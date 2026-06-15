@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Стратегия WB — Новые направления 2025–2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:       #1C2B3A;
+  --navy-lt:    #253548;
+  --teal:       #00A878;
+  --teal-lt:    #E4F7F1;
+  --teal-dk:    #007A58;
+  --amber:      #F59E0B;
+  --amber-lt:   #FFFBEB;
+  --coral:      #F97316;
+  --coral-lt:   #FFF4EE;
+  --purple:     #7C3AED;
+  --purple-lt:  #F5F3FF;
+  --red:        #EF4444;
+  --red-lt:     #FFF1F2;
+  --bg:         #EEF2F7;
+  --bg-alt:     #F7F9FC;
+  --white:      #FFFFFF;
+  --text:       #111827;
+  --text-s:     #4B5563;
+  --text-m:     #6B7280;
+  --text-x:     #9CA3AF;
+  --border:     #E5E7EB;
+  --border-dk:  #D1D5DB;
+  --r:          12px;
+  --r-sm:       8px;
+  --r-xs:       6px;
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── HEADER ─────────────────────────────────────────── */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: var(--navy);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.hdr {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
+  white-space: nowrap;
+  letter-spacing: .02em;
+}
+.logo em { color: var(--teal); font-style: normal; }
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+nav a {
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  font-size: 12.5px;
+  font-weight: 500;
+  padding: 5px 11px;
+  border-radius: var(--r-xs);
+  transition: all .15s;
+  white-space: nowrap;
+}
+nav a:hover { color: #fff; background: rgba(255,255,255,0.09); }
+nav a.active { color: #fff; background: rgba(255,255,255,0.1); }
+nav a.ext {
+  color: #4dd8a8;
+  border: 1px solid rgba(0,168,120,0.35);
+  margin-left: 6px;
+}
+nav a.ext:hover { background: rgba(0,168,120,0.12); color: #6ee8bc; }
+
+/* ── HERO ────────────────────────────────────────────── */
+.hero {
+  background: linear-gradient(145deg, #152030 0%, #1e3448 55%, #0f2235 100%);
+  padding: 4rem 1.5rem 3.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 60% at 50% 100%, rgba(0,168,120,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-inner { max-width: 680px; margin: 0 auto; position: relative; }
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0,168,120,0.15);
+  color: #4dd8a8;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(0,168,120,0.3);
+  margin-bottom: 1.25rem;
+}
+
+.hero h1 {
+  font-size: clamp(1.6rem, 4.5vw, 2.4rem);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: .75rem;
+  letter-spacing: -.01em;
+}
+
+.hero p {
+  color: rgba(255,255,255,0.5);
+  font-size: 14.5px;
+  max-width: 500px;
+  margin: 0 auto 2.25rem;
+  line-height: 1.65;
+}
+
+.stats-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.stat {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: var(--r-sm);
+  padding: .8rem 1.1rem;
+  min-width: 120px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+}
+.stat .v { font-size: 1.55rem; font-weight: 700; line-height: 1; }
+.stat .v.bad { color: #FC8181; }
+.stat .v.good { color: #68D391; }
+.stat .l { font-size: 10.5px; color: rgba(255,255,255,0.4); margin-top: 4px; line-height: 1.35; }
+
+/* ── SECTIONS ────────────────────────────────────────── */
+.wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.wrap.alt { background: var(--bg-alt); }
+
+.sec-eyebrow {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: .4rem;
+}
+
+.sec-title {
+  font-size: clamp(1.25rem, 3vw, 1.65rem);
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.sec-sub {
+  color: var(--text-s);
+  font-size: 13.5px;
+  margin-top: .4rem;
+  max-width: 600px;
+}
+
+.sec-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1.25rem 0 2rem;
+}
+
+/* ── CARDS ───────────────────────────────────────────── */
+.cards { display: grid; gap: 14px; }
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  overflow: hidden;
+  transition: box-shadow .2s, border-color .2s, transform .15s;
+}
+.card:hover {
+  border-color: var(--border-dk);
+  box-shadow: 0 6px 20px rgba(0,0,0,.07);
+  transform: translateY(-1px);
+}
+
+.card-top {
+  display: flex;
+  gap: 13px;
+  padding: 1.25rem 1.5rem .7rem;
+  align-items: flex-start;
+}
+
+.cnum {
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.cn-teal   { background: var(--teal-lt); color: var(--teal-dk); }
+.cn-purple { background: var(--purple-lt); color: #5B21B6; }
+
+.card-meta { flex: 1; }
+.c-title { font-size: 14.5px; font-weight: 600; color: var(--text); line-height: 1.3; }
+.c-maker { font-size: 11.5px; color: var(--text-x); margin-top: 3px; }
+
+.c-body {
+  font-size: 13px;
+  color: var(--text-s);
+  line-height: 1.65;
+  padding: 0 1.5rem .6rem 4.25rem;
+}
+
+.c-body + .c-body { padding-top: 0; margin-top: -.2rem; }
+
+.c-subtitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: .25rem;
+}
+
+.plist { list-style: none; margin: 0; padding: 0; }
+.plist li {
+  font-size: 12.5px;
+  color: var(--text-s);
+  padding: 2px 0 2px 14px;
+  position: relative;
+  line-height: 1.5;
+}
+.plist li::before { content: '›'; position: absolute; left: 0; color: var(--teal); font-weight: 700; }
+
+.new-t {
+  display: inline-block;
+  background: var(--teal-lt);
+  color: var(--teal-dk);
+  font-size: 9.5px;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 4px;
+  margin-left: 4px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  vertical-align: middle;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: .1rem 1.5rem .8rem 4.25rem;
+}
+
+.tag {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 9px;
+  border-radius: 20px;
+}
+.tg  { background: #ECFDF5; color: #065F46; }
+.ta  { background: #FFFBEB; color: #92400E; }
+.tb  { background: #EFF6FF; color: #1D4ED8; }
+.tr  { background: #FFF1F2; color: #9F1239; }
+.tp  { background: #F5F3FF; color: #5B21B6; }
+.tx  { background: #F3F4F6; color: #374151; border: 1px solid var(--border); }
+
+.status-bar {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: .65rem 1.5rem;
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+}
+
+.dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.d-red    { background: #EF4444; }
+.d-yellow { background: #F59E0B; }
+.d-green  { background: #10B981; }
+
+.s-text { font-size: 11.5px; color: var(--text-m); line-height: 1.5; }
+
+/* ── DIRECTION CARDS ──────────────────────────────────── */
+.dir-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  overflow: hidden;
+  transition: box-shadow .2s, border-color .2s, transform .15s;
+}
+.dir-card:hover {
+  border-color: var(--border-dk);
+  box-shadow: 0 6px 20px rgba(0,0,0,.07);
+  transform: translateY(-1px);
+}
+
+.dbar { height: 4px; }
+.db-teal   { background: var(--teal); }
+.db-amber  { background: var(--amber); }
+.db-purple { background: var(--purple); }
+.db-navy   { background: #3B6CB5; }
+.db-coral  { background: var(--coral); }
+
+/* ── ANALYTICS ────────────────────────────────────────── */
+.analytics-section {
+  background: #0F1E2C;
+  padding: 3rem 1.5rem;
+}
+.analytics-inner { max-width: 1140px; margin: 0 auto; }
+.analytics-inner .sec-eyebrow { color: #4dd8a8; }
+.analytics-inner .sec-title   { color: #fff; }
+.analytics-inner .sec-sub     { color: rgba(255,255,255,0.45); }
+.analytics-inner .sec-divider { border-color: rgba(255,255,255,0.1); }
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 10px;
+  margin-bottom: 2.5rem;
+}
+
+.fact {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--r-sm);
+  padding: 1rem 1.1rem;
+}
+.fact .fv { font-size: 1.75rem; font-weight: 700; color: #4dd8a8; line-height: 1; }
+.fact .fl { font-size: 11.5px; color: rgba(255,255,255,0.45); margin-top: .35rem; line-height: 1.4; }
+.fact .fs { font-size: 10px; color: rgba(255,255,255,0.2); margin-top: .2rem; }
+
+.a-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+@media(max-width: 700px) { .a-grid { grid-template-columns: 1fr; } }
+
+.a-block-title {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: .75rem;
+}
+
+.occ-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+  margin-top: .5rem;
+}
+.occ-chip {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: var(--r-xs);
+  padding: .45rem .7rem;
+  font-size: 11.5px;
+  color: rgba(255,255,255,0.4);
+}
+.occ-chip span { display: block; font-size: 10px; color: rgba(255,255,255,0.2); margin-top: 1px; }
+
+.src-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+.src-list li {
+  font-size: 12px;
+  color: rgba(255,255,255,0.38);
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.45;
+}
+.src-list li::before { content: '→'; position: absolute; left: 0; color: var(--teal); }
+.src-list a { color: #4dd8a8; text-decoration: none; border-bottom: 1px solid rgba(0,168,120,0.25); }
+.src-list a:hover { border-color: var(--teal); }
+
+.method-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+.method-list li {
+  font-size: 12px;
+  color: rgba(255,255,255,0.38);
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.45;
+}
+.method-list li::before { content: '·'; position: absolute; left: 2px; color: var(--teal); font-size: 14px; line-height: 1.3; }
+
+/* ── FOOTER ───────────────────────────────────────────── */
+footer {
+  background: #0A141F;
+  text-align: center;
+  padding: 1.25rem 1.5rem;
+  font-size: 11px;
+  color: rgba(255,255,255,0.18);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+/* ── MOBILE ───────────────────────────────────────────── */
+@media(max-width: 640px) {
+  .hdr { height: auto; padding: .6rem 1rem; flex-direction: column; align-items: flex-start; gap: .5rem; }
+  nav { justify-content: flex-start; }
+  .hero { padding: 2.5rem 1rem 2rem; }
+  .stats-row { gap: 8px; }
+  .stat { min-width: 100px; }
+  .wrap { padding: 2rem 1rem; }
+  .c-body { padding-left: 1.25rem; }
+  .tags   { padding-left: 1.25rem; }
+  .card-top { padding: 1rem 1.1rem .5rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ HEADER ═══════════════ -->
+<header>
+  <div class="hdr">
+    <div class="logo"><em>WB ·</em> Стратегия развития 2026</div>
+    <nav>
+      <a href="#goods">5 ниш товаров</a>
+      <a href="#directions">5 направлений</a>
+      <a href="#analytics">Аналитика</a>
+      <a href="https://belarusbank.by/docs/fizicheskim_licam/kredity/dokumenty-dlya-skachivaniya/271298/"
+         class="ext" target="_blank" rel="noopener">Перечень БТ ↗</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">Аналитическая записка · Июнь 2026</div>
+    <h1>Масштабирование модели:<br>новые ниши и направления на WB и Ozon</h1>
+    <p>Белорусский производитель + собственная инфраструктура FBS/FBO + охват Wildberries по всей России — работающая модель дистрибуции. Задача: расширить её через новые товарные ниши и дополнительные направления деятельности.</p>
+    <div class="stats-row">
+      <div class="stat">
+        <div class="v good">+75%</div>
+        <div class="l">рост продаж<br>белорусских товаров на WB</div>
+      </div>
+      <div class="stat">
+        <div class="v good">+47%</div>
+        <div class="l">рост за 9 мес. к<br>предыдущему периоду</div>
+      </div>
+      <div class="stat">
+        <div class="v good">50%</div>
+        <div class="l">производителей РБ<br>ещё не на WB/Ozon</div>
+      </div>
+      <div class="stat">
+        <div class="v good">+573%</div>
+        <div class="l">садовый инструмент<br>РБ на WB год к году</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ SECTION 1: ТОВАРЫ ═══════════════ -->
+<div id="goods">
+<div class="wrap">
+
+  <div class="sec-eyebrow">Раздел 01</div>
+  <div class="sec-title">5 новых товарных ниш</div>
+  <div class="sec-sub">Белорусские производители, слабо или неверно представленные на WB.RU — кандидаты на эксклюзивное дистрибьюторство по модели «Витебского мехового комбината»</div>
+  <hr class="sec-divider">
+
+  <div class="cards">
+
+    <!-- 1. Лён -->
+    <div class="card">
+      <div class="card-top">
+        <div class="cnum cn-teal">1</div>
+        <div class="card-meta">
+          <div class="c-title">Льняной кухонный и банный текстиль</div>
+          <div class="c-maker">РУПТП «Оршанский льнокомбинат» · г. Орша</div>
+        </div>
+      </div>
+      <div class="c-body">
+        «Белорусский лён» — один из немногих устойчивых брендов в сознании российского покупателя без дополнительного объяснения. Завод производит готовые изделия: полотенца, кухонный текстиль, скатерти, банные рукавицы, прихватки, наборы для кухни. На маркетплейсах их ткань продают перекупщики, а сам завод с готовыми изделиями на WB.RU представлен слабо. Несезонный, хорошая оборачиваемость. Крупные партии — FBO, мелкие — FBS.
+      </div>
+      <div class="tags">
+        <span class="tag tg">бренд без объяснений</span>
+        <span class="tag tg">несезонный</span>
+        <span class="tag tb">FBS / FBO</span>
+        <span class="tag ta">завод не умеет онлайн</span>
+        <span class="tag tg">высокая оборачиваемость</span>
+      </div>
+      <div class="status-bar">
+        <div class="dot d-yellow"></div>
+        <div class="s-text">На WB.RU продают перекупщики — самого завода как продавца готовых изделий нет. Эксклюзив реалистичен.</div>
+      </div>
+    </div>
+
+    <!-- 2. Радошковичи + дерево -->
+    <div class="card">
+      <div class="card-top">
+        <div class="cnum cn-teal">2</div>
+        <div class="card-meta">
+          <div class="c-title">Белорусская керамика и деревянный декор</div>
+          <div class="c-maker">РУП «Радошковичский керамический завод» (Молодечно) · Фабрики художественных изделий (Слуцк, Мозырь, Брест)</div>
+        </div>
+      </div>
+      <div class="c-body">
+        <div class="c-subtitle">Радошковичский КЗ</div>
+        Ручная роспись, белорусские орнаменты, традиционная гончарная техника. Кружки, тарелки, горшки, вазы, кашпо, сувенирные изделия. Уникальный аутентичный продукт — не поддаётся копированию китайским производством. Категория «подарки и сувениры» на WB слабо наполнена белорусским производством.
+      </div>
+      <div class="c-body">
+        <div class="c-subtitle">Деревянный кухонный декор</div>
+        Разделочные доски, деревянные лопатки, подставки, наборы для кухни из натурального дерева — фабрики художественных изделий. Аргумент «не Китай» работает в этой нише: натуральное дерево, белорусское производство.
+      </div>
+      <div class="tags">
+        <span class="tag tr">почти нет на WB.RU</span>
+        <span class="tag tg">уникальный продукт</span>
+        <span class="tag tb">FBS</span>
+        <span class="tag ta">широкий ассортимент SKU</span>
+        <span class="tag tg">подарочная категория</span>
+      </div>
+      <div class="status-bar">
+        <div class="dot d-red"></div>
+        <div class="s-text">Радошковичский КЗ и фабрики художественных изделий практически отсутствуют как бренд на WB.RU — реализация через ярмарки и сувенирные магазины.</div>
+      </div>
+    </div>
+
+    <!-- 3. Галантэя -->
+    <div class="card">
+      <div class="card-top">
+        <div class="cnum cn-teal">3</div>
+        <div class="card-meta">
+          <div class="c-title">Кожгалантерея из натуральной кожи</div>
+          <div class="c-maker">ОАО «ГАЛАНТЭЯ» · СООО «Маттиоли» · Минск</div>
+        </div>
+      </div>
+      <div class="c-body">
+        Сумки, портмоне, портфели, ремни. На WB.RU бренд присутствует, но карточки оформлены слабо — устаревшие фото, минимальный ассортимент, нет работы с отзывами. Типичный случай: хороший товар без понимания маркетплейса. Натуральная кожа белорусского производства — сильный аргумент против китайского кожзама в той же ценовой нише (2 000–8 000 ₽). Несезонный, компактный для FBS.
+      </div>
+      <div class="tags">
+        <span class="tag ta">на WB есть, но слабо</span>
+        <span class="tag tg">сильный продукт</span>
+        <span class="tag tb">FBS</span>
+        <span class="tag tp">высокий чек</span>
+        <span class="tag tg">несезонный</span>
+      </div>
+      <div class="status-bar">
+        <div class="dot d-yellow"></div>
+        <div class="s-text">Бренд на WB без активного продвижения и нормальных карточек — вход через переговоры с заводом об эксклюзиве на WB.RU.</div>
+      </div>
+    </div>
+
+    <!-- 4. Садовый инструмент -->
+    <div class="card">
+      <div class="card-top">
+        <div class="cnum cn-teal">4</div>
+        <div class="card-meta">
+          <div class="c-title">Садовый ручной инструмент и инвентарь</div>
+          <div class="c-maker">Лидагропроммаш · Стромат · ОАО «Нива» и аналоги — требует полевой разведки</div>
+        </div>
+      </div>
+      <div class="c-body">
+        Продажи белорусских садовых инструментов на WB выросли на <strong>+573% год к году</strong> — самая быстрорастущая категория белорусских товаров на платформе при малой абсолютной базе. Классический сигнал ненасыщенной ниши. Компактный ручной инструмент: сапки, тяпки, совки ручные, культиваторы, рыхлители, грабли. Белорусское машиностроение производит это в большом объёме. Конкретный производитель требует полевого поиска (звонки на заводы Гродненской и Минской области).
+      </div>
+      <div class="tags">
+        <span class="tag tr">+573% рост WB</span>
+        <span class="tag tr">производители не в онлайне</span>
+        <span class="tag tb">FBS / FBO</span>
+        <span class="tag ta">нужна разведка заводов</span>
+        <span class="tag tx">пик: март–июнь</span>
+      </div>
+      <div class="status-bar">
+        <div class="dot d-red"></div>
+        <div class="s-text">Категория горит. Требует объезда 3–4 заводов в Гродно / Лида / Минск с предложением эксклюзива WB.RU.</div>
+      </div>
+    </div>
+
+    <!-- 5. БПХО -->
+    <div class="card">
+      <div class="card-top">
+        <div class="cnum cn-teal">5</div>
+        <div class="card-meta">
+          <div class="c-title">Хлопчатобумажный домашний текстиль</div>
+          <div class="c-maker">ОАО «БПХО» (Барановичское производственное хлопчатобумажное объединение)</div>
+        </div>
+      </div>
+      <div class="c-body">
+        Постельное бельё, наволочки, простыни, полотенца из хлопка — отличается от льняного направления (п.1) как материалом, так и ценовым сегментом. БПХО — один из крупнейших текстильных заводов ЕАЭС. На WB.RU товар продаётся через множество перекупщиков без единого брендового продавца. Высокий постоянный спрос, несезонный. Крупные партии хорошо ложатся на FBO (меньше ручной работы, постоянный оборот).
+      </div>
+      <div class="tags">
+        <span class="tag tg">несезонный</span>
+        <span class="tag tg">постоянный спрос</span>
+        <span class="tag tb">FBO приоритет</span>
+        <span class="tag ta">перекупщики без бренда</span>
+        <span class="tag tg">крупнейший завод ЕАЭС</span>
+      </div>
+      <div class="status-bar">
+        <div class="dot d-yellow"></div>
+        <div class="s-text">Перекупщики продают без бренда. Возможность стать официальным дистрибьютором на WB.RU и Ozon.</div>
+      </div>
+    </div>
+
+  </div><!-- /cards -->
+</div>
+</div>
+
+<!-- ═══════════════ SECTION 2: НАПРАВЛЕНИЯ ═══════════════ -->
+<div id="directions" style="background: var(--bg-alt);">
+<div class="wrap">
+
+  <div class="sec-eyebrow">Раздел 02</div>
+  <div class="sec-title">5 направлений развития</div>
+  <div class="sec-sub">Масштабирование текущей модели и новые источники дохода с использованием имеющейся инфраструктуры в РБ</div>
+  <hr class="sec-divider">
+
+  <div class="cards">
+
+    <!-- Д1: Ozon -->
+    <div class="dir-card">
+      <div class="dbar db-teal"></div>
+      <div class="card-top">
+        <div class="cnum cn-teal">1</div>
+        <div class="card-meta">
+          <div class="c-title">Ozon как параллельный канал сбыта</div>
+          <div class="c-maker">Развитие текущей модели · Самый быстрый в запуске · 2–3 недели</div>
+        </div>
+      </div>
+      <div class="c-body">
+        Весь текущий ассортимент дублируется на Ozon с минимальными доработками карточек. Ozon хорошо работает с белорусскими продавцами: фулфилмент-центр в Минске (13 000 м²) и сортировочный центр в Орше — логистика в РФ не сложнее, чем на WB. Аудитории платформ частично не пересекаются. Особенно актуально для луп БелОМО и крепежа ЕКТ Компани — промышленная и мужская аудитория Ozon сильнее, чем на WB.
+      </div>
+      <div class="tags">
+        <span class="tag tg">быстрый запуск</span>
+        <span class="tag tb">дублирование ассортимента</span>
+        <span class="tag ta">дополнительный охват</span>
+        <span class="tag tg">минимальный риск</span>
+      </div>
+      <div class="status-bar">
+        <div class="dot d-green"></div>
+        <div class="s-text">Минимальный риск и усилия на запуск. Начать с текущего ассортимента, добавлять новые ниши параллельно с WB.</div>
+      </div>
+    </div>
+
+    <!-- Д2: Мех расширение -->
+    <div class="dir-card">
+      <div class="dbar db-amber"></div>
+      <div class="card-top">
+        <div class="cnum cn-teal">2</div>
+        <div class="card-meta">
+          <div class="c-title">Круглогодичная монетизация мехового направления</div>
+          <div class="c-maker">Витебский меховой комбинат · Расширение ассортимента из натуральной овчины меринос</div>
+        </div>
+      </div>
+      <div class="c-body">
+        Сейчас 45% выручки от ВМК «умирает» летом — ковры и шапки для бани вне сезона. Решение: выйти за пределы сезонных позиций в несезонные и круглогодичные товары из натуральной овчины меринос, которые уже хорошо представлены на WB конкурентами.
+      </div>
+      <div class="c-body">
+        <div class="c-subtitle">Уже продаём:</div>
+        <ul class="plist">
+          <li>Шкуры овечьи (S/M/L/XL) в 8 цветах</li>
+          <li>Коврики меховые (S/M/L/XL)</li>
+          <li>Ковры (180×200, 168×70, круглые 145 см)</li>
+          <li>Шапки для бани из овчины (4 цвета)</li>
+          <li>Рукавицы рабочие зимние с мехом</li>
+        </ul>
+      </div>
+      <div class="c-body" style="margin-top: .5rem;">
+        <div class="c-subtitle">Новые позиции — проработать с ВМК:</div>
+        <ul class="plist">
+          <li>Накидка на автомобильное сиденье из овчины <span class="new-t">new</span></li>
+          <li>Накладка на табурет / барный стул из овчины <span class="new-t">new</span></li>
+          <li>Лежанка для кошки / собаки из натуральной овчины <span class="new-t">new</span></li>
+          <li>Стельки зимние из натуральной овчины — терапевтический спрос <span class="new-t">new</span></li>
+          <li>Тапочки / чуни из овчины — популярная WB-категория <span class="new-t">new</span></li>
+          <li>Пояс согревающий поясничный из овчины — медицинское применение <span class="new-t">new</span></li>
+          <li>Подушка декоративная с наполнителем из руна меринос <span class="new-t">new</span></li>
+          <li>Подкладка в детскую коляску / кроватку из овчины <span class="new-t">new</span></li>
+        </ul>
+      </div>
+      <div class="tags">
+        <span class="tag tg">существующий партнёр</span>
+        <span class="tag tg">все позиции — FBS</span>
+        <span class="tag tb">несезонные позиции</span>
+        <span class="tag ta">согласовать с ВМК</span>
+        <span class="tag tx">стельки/тапочки — возм. др. поставщик</span>
+      </div>
+      <div class="status-bar">
+        <div class="dot d-yellow"></div>
+        <div class="s-text">Требует переговоров с ВМК о расширении ассортимента. Стельки и тапочки могут потребовать отдельного поставщика.</div>
+      </div>
+    </div>
+
+    <!-- Д3: Фулфилмент -->
+    <div class="dir-card">
+      <div class="dbar db-purple"></div>
+      <div class="card-top">
+        <div class="cnum cn-teal">3</div>
+        <div class="card-meta">
+          <div class="c-title">Фулфилмент-оператор для белорусских производителей</div>
+          <div class="c-maker">Новое направление · B2B услуги · Высокая масштабируемость</div>
+        </div>
+      </div>
+      <div class="c-body">
+        Уже умеем: принять товар в РБ, упаковать под стандарты WB/Ozon, оформить карточки, отправить по FBS или FBO, управлять аккаунтом и остатками. Это именно то, чего не умеет большинство белорусских заводов. По данным МАРТ, из 80 опрошенных белорусских производителей половина всё ещё не работает с маркетплейсами.<br><br>
+        Предложение заводам: вход на WB / Ozon «под ключ» — оформление карточек, логистика, аналитика, управление остатками, реклама. Доход — % от оборота клиента или фиксированный тариф за аккаунт. Один аналитик параллельно ведёт 3–5 клиентских аккаунтов без найма дополнительного персонала.
+      </div>
+      <div class="tags">
+        <span class="tag tg">масштабируется без роста штата</span>
+        <span class="tag tb">B2B модель</span>
+        <span class="tag ta">текущие ресурсы</span>
+        <span class="tag tp">повторяющийся доход</span>
+      </div>
+      <div class="status-bar">
+        <div class="dot d-green"></div>
+        <div class="s-text">Стратегически наиболее устойчивое направление — монетизирует главный актив компании (умение работать с WB из РБ) независимо от конкретного товара.</div>
+      </div>
+    </div>
+
+    <!-- Д4: FBO + ФОТ -->
+    <div class="dir-card">
+      <div class="dbar db-navy"></div>
+      <div class="card-top">
+        <div class="cnum cn-teal">4</div>
+        <div class="card-meta">
+          <div class="c-title">Переход на FBO + оптимизация ФОТ в летний период</div>
+          <div class="c-maker">Операционная оптимизация · апрель–август</div>
+        </div>
+      </div>
+      <div class="c-body">
+        В летний несезон операционная загрузка склада резко снижается — меховое направление не активно, объём отгрузок падает. Это создаёт возможность для плановой оптимизации постоянных расходов без ущерба для бизнеса.
+      </div>
+      <div class="c-body">
+        <ul class="plist" style="margin-top: .25rem;">
+          <li><strong>Перевод ассортимента на FBO:</strong> крупная партия сезонных товаров завозится на склад WB одной поставкой в начале периода. WB самостоятельно комплектует и отгружает заказы — операционная нагрузка на собственный персонал сокращается до минимума.</li>
+          <li><strong>Высвобождение операционного персонала:</strong> снижение интенсивности ручных операций позволяет временно перераспределить трудовые ресурсы без сокращения штата.</li>
+          <li><strong>Экономия на ФОТ:</strong> за счёт перевода части функций на инфраструктуру WB постоянные расходы на персонал в период апрель–август снижаются на 3–4 месячных ФОТ складского звена.</li>
+          <li><strong>Возврат к FBS осенью:</strong> с началом мехового сезона (сентябрь) — восстановление полного режима FBS для оперативной обработки возросшего потока заказов.</li>
+        </ul>
+      </div>
+      <div class="c-body" style="margin-top: .4rem; font-style: italic; font-size: 12.5px; color: var(--text-m);">
+        ⚠ Требует предварительного расчёта: стоимость хранения FBO на WB vs. экономия на ФОТ. При корректном прогнозе остатков — выгодно.
+      </div>
+      <div class="tags">
+        <span class="tag tg">сохраняем команду</span>
+        <span class="tag tg">снижение постоянных расходов</span>
+        <span class="tag tb">FBO снижает операционку</span>
+        <span class="tag ta">нужен расчёт FBO vs FBS маржи</span>
+        <span class="tag tr">WB берёт комиссию за хранение</span>
+      </div>
+      <div class="status-bar">
+        <div class="dot d-yellow"></div>
+        <div class="s-text">Плановая сезонная оптимизация. Ключевой риск — точность прогноза по FBO-остаткам: перезавезти дороже, чем недозавезти.</div>
+      </div>
+    </div>
+
+    <!-- Д5: ЮВА -->
+    <div class="dir-card">
+      <div class="dbar db-coral"></div>
+      <div class="card-top">
+        <div class="cnum cn-teal">5</div>
+        <div class="card-meta">
+          <div class="c-title">Экспорт в Юго-Восточную Азию через маркетплейсы</div>
+          <div class="c-maker">Lazada · Shopee · Tokopedia · Декларант уже в штате · долгосрочное</div>
+        </div>
+      </div>
+      <div class="c-body">
+        Декларант и экспортный канал уже работают. США закрыты — но рынки ЮВА открыты: Lazada (Малайзия, Таиланд, Вьетнам), Shopee (вся ЮВА), Tokopedia (Индонезия). БелОМО оптика (лупы ювелирные, коллиматорные прицелы) востребована в охотничьем и ювелирном сегменте ЮВА. Уже есть действующие контакты с покупателями из Вьетнама и Таиланда — расширить ассортимент и системно выйти на маркетплейсы вместо единичных продаж через сайт.
+      </div>
+      <div class="tags">
+        <span class="tag tg">декларант уже есть</span>
+        <span class="tag ta">опыт ВЭД с Азией</span>
+        <span class="tag tb">альтернатива рынку США</span>
+        <span class="tag tr">длинный цикл выхода</span>
+        <span class="tag tx">долгосрочное направление</span>
+      </div>
+      <div class="status-bar">
+        <div class="dot d-yellow"></div>
+        <div class="s-text">Точка входа — расширить текущие B2B-контакты в Вьетнаме/Таиланде, параллельно тестировать Shopee с БелОМО оптикой.</div>
+      </div>
+    </div>
+
+  </div><!-- /cards -->
+</div>
+</div>
+
+<!-- ═══════════════ АНАЛИТИКА ═══════════════ -->
+<div id="analytics">
+<div class="analytics-section">
+<div class="analytics-inner">
+
+  <div class="sec-eyebrow">Аналитическая база</div>
+  <div class="sec-title">На что опирались при составлении</div>
+  <div class="sec-sub">Ключевые цифры, источники и методология</div>
+  <hr class="sec-divider">
+
+  <div class="facts-grid">
+    <div class="fact">
+      <div class="fv">+75%</div>
+      <div class="fl">рост продаж белорусских продавцов на WB в 2024 году</div>
+      <div class="fs">Wildberries / neg.by, фев. 2025</div>
+    </div>
+    <div class="fact">
+      <div class="fv">+47%</div>
+      <div class="fl">рост за 9 месяцев 2025 г. к 2024 г.</div>
+      <div class="fs">Wildberries E-Com Day, окт. 2025</div>
+    </div>
+    <div class="fact">
+      <div class="fv">+573%</div>
+      <div class="fl">рост белорусских садовых инструментов на WB год к году</div>
+      <div class="fs">newgrodno.by, авг. 2023</div>
+    </div>
+    <div class="fact">
+      <div class="fv">50%</div>
+      <div class="fl">белорусских производителей из 80 опрошенных ещё не на маркетплейсах</div>
+      <div class="fs">ibmedia.by / МАРТ, окт. 2025</div>
+    </div>
+    <div class="fact">
+      <div class="fv">+41%</div>
+      <div class="fl">рост продаж белорусских товаров в России на WB</div>
+      <div class="fs">Wildberries / mlyn.by</div>
+    </div>
+    <div class="fact">
+      <div class="fv">13 000</div>
+      <div class="fl">м² — фулфилмент-центр Ozon в Минске, сортировочный центр в Орше</div>
+      <div class="fs">Ozon / nashaniva.com</div>
+    </div>
+  </div>
+
+  <!-- Топ-10 категорий -->
+  <div style="margin-bottom: 2rem;">
+    <div class="a-block-title">Топ-10 категорий белорусских товаров на WB — уже конкурентно</div>
+    <div class="occ-grid">
+      <div class="occ-chip">Одежда<span>+95% YoY, топ-1</span></div>
+      <div class="occ-chip">Косметика<span>+52% YoY, топ-2</span></div>
+      <div class="occ-chip">Нижнее бельё<span>топ-3</span></div>
+      <div class="occ-chip">Текстиль для дома<span>топ-4</span></div>
+      <div class="occ-chip">Продукты питания<span>топ-5</span></div>
+      <div class="occ-chip">Отделочные материалы<span>топ-6</span></div>
+      <div class="occ-chip">Садоводство<span>топ-7, растёт</span></div>
+      <div class="occ-chip">Детские игрушки<span>топ-8</span></div>
+      <div class="occ-chip">Мебель для сна<span>топ-9</span></div>
+      <div class="occ-chip">Посуда<span>топ-10</span></div>
+    </div>
+  </div>
+
+  <div class="a-grid">
+    <!-- Уже занято -->
+    <div>
+      <div class="a-block-title">Уже хорошо занято — туда не идём</div>
+      <ul class="src-list">
+        <li><strong style="color:rgba(255,255,255,.65)">AMI</strong> — мебель и товары для дома, топ WB, продаёт сам</li>
+        <li><strong style="color:rgba(255,255,255,.65)">LUXVISAGE / Tashe / AVALON / Relouis</strong> — косметика, топ WB</li>
+        <li><strong style="color:rgba(255,255,255,.65)">Mark Formelle / NEVERLATE</strong> — одежда, топ WB</li>
+        <li><strong style="color:rgba(255,255,255,.65)">CONTE Elegant</strong> — носочные изделия, топ WB</li>
+        <li><strong style="color:rgba(255,255,255,.65)">Полесье</strong> — игрушки, топ WB, продаёт сам</li>
+        <li><strong style="color:rgba(255,255,255,.65)">Белорусские обои</strong> — топ WB, продаёт сам</li>
+        <li><strong style="color:rgba(255,255,255,.65)">Добрушский фарфор / Неман стекло</strong> — сами вышли на WB/Ozon</li>
+        <li><strong style="color:rgba(255,255,255,.65)">Milavitsa / Купалинка</strong> — своя дистрибьюция</li>
+        <li><strong style="color:rgba(255,255,255,.65)">Белита / Viteks</strong> — косметика, топ WB, сами продают</li>
+      </ul>
+
+      <div style="margin-top: 1.75rem;">
+        <div class="a-block-title">Методология поиска эксклюзива</div>
+        <ul class="method-list">
+          <li>Поиск по бренду на <strong style="color:rgba(255,255,255,.6)">WB.RU</strong> (не .BY) → считаем карточки и отзывы</li>
+          <li>Кто продаёт — сам завод или перекупщики без бренда?</li>
+          <li>Раздел «Сделано в Беларуси» на WB — список с БелТПП-верификацией</li>
+          <li>Прямой контакт с заводом — предложение эксклюзива на WB.RU</li>
+          <li>Критерий: хороший товар + нет онлайн-компетенции + компактный + не скоропортящийся</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Источники -->
+    <div>
+      <div class="a-block-title">Источники данных</div>
+      <ul class="src-list">
+        <li><a href="https://neg.by/novosti/otkrytj/wildberries-o-statistike-prodazh-belorusskikh-tovarov-cherez-marketpleys/" target="_blank" rel="noopener">Wildberries — статистика по белорусским продавцам (neg.by)</a></li>
+        <li><a href="https://belretail.by/news/prodaji-belorusskih-tovarov-na-wildberries-vyirosli-bolee-chem-v-poltora-raza" target="_blank" rel="noopener">Рост продаж WB +47% за 9 мес. 2025 (belretail.by)</a></li>
+        <li><a href="https://ibmedia.by/news/belorusskie-proizvoditeli-nedovolny-marketplejsami-ozon-prokommentiroval/" target="_blank" rel="noopener">Белорусские производители и маркетплейсы — МАРТ (ibmedia.by)</a></li>
+        <li><a href="https://newgrodno.by/novosti-belarusi/kakie-eshhyo-belorusskie-tovary-pokupayut-na-wildberries/" target="_blank" rel="noopener">Садовые инструменты +573% на WB (newgrodno.by)</a></li>
+        <li><a href="https://nashaniva.com/ru/350015" target="_blank" rel="noopener">Производители выходят «из-под палки» — насhaniva.com</a></li>
+        <li><a href="https://mlyn.by/business/top-10-kategorij-belorusskix-tovarov-na-wildberries/" target="_blank" rel="noopener">Топ-10 категорий белорусских товаров на WB (mlyn.by)</a></li>
+        <li><a href="https://belarusbank.by/docs/fizicheskim_licam/kredity/dokumenty-dlya-skachivaniya/271298/" target="_blank" rel="noopener">Официальный перечень белорусских товаров (BelBank) ↗</a></li>
+      </ul>
+
+      <div style="margin-top: 1.75rem;">
+        <div class="a-block-title">Конкурентные преимущества компании</div>
+        <ul class="method-list">
+          <li>Склад + упаковка в РБ — готовность к FBS и FBO без посредников</li>
+          <li>Действующие аккаунты и рейтинг продавца на WB</li>
+          <li>Декларант на аутсорсе — готовность к ВЭД и экспорту</li>
+          <li>Аналитик с опытом работы с тендерами и маркетплейсами</li>
+          <li>Опыт эксклюзивного дистрибьюторства (Витебский меховой комбинат)</li>
+          <li>Арендный автомобиль — гибкая логистика и возможность генерации дохода</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer>
+  Аналитическая записка · Подготовлена на основе открытых источников · Июнь 2026 · Для обсуждения с партнёрами
+</footer>
+
+<script>
+// Active nav on scroll
+const sections = [
+  document.getElementById('goods'),
+  document.getElementById('directions'),
+  document.getElementById('analytics')
+];
+const links = document.querySelectorAll('nav a[href^="#"]');
+
+function updateNav() {
+  let active = '';
+  sections.forEach(s => {
+    if (s && window.scrollY + 80 >= s.offsetTop) active = '#' + s.id;
+  });
+  links.forEach(a => {
+    const isActive = a.getAttribute('href') === active;
+    a.classList.toggle('active', isActive);
+  });
+}
+
+window.addEventListener('scroll', updateNav, { passive: true });
+updateNav();
+
+// Smooth scroll
+links.forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop - 62,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+</script>
+</body>
+</html>
